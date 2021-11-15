@@ -4,6 +4,6 @@ Built a timed code quiz that's made up of multiple-choice questions. This app wi
 
 ### Links
 
-*   The URL of the deployed application.
+* https://light2adrifter.github.io/challenge-4/ . The URL of the deployed application.
 
-*   The URL of the GitHub repository.
+* https://github.com/light2adrifter/challenge-4 .  The URL of the GitHub repository.
