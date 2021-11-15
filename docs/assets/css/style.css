@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #0300bb;
+    --secondary-color: #007bbd;
+    --tertiary-color: #6b8dff;
+    --wrong-color: #c40000;
+    --right-color: #00e025;
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: 10px double var(--primary-color);
+}
+#startTimer {
+    background-color: var(--primary-color);
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+#questions {
+    margin: 20px;
+}
+
+#currentTime {
+    float: right;
+}
+
+#return {
+    background-color: var(--primary-color);
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    left: 55%;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+#clear {
+    background-color: var(--primary-color);
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    right: 5%;
+    text-align: center;
+}
+
+button {
+    border-radius: 8px;
+}
+
+textarea {
+    width: 80%;
+    margin: 15px;
+}
+
+#submit {
+    background-color: var(--primary-color);
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 5px solid lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    background-color: var(--primary-color);
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+
+/* Media Query max-width: 786px */
+@media screen and (max-width: 786px) {
+    body {
+        max-width: 786px;
+    }
+
+    #container {
+        position: absolute;
+        left: 20%;
+    }
+
+    a {
+        margin-left: 20%;
+    }
+    #return {
+    
+        position: relative;
+        left: 55%;
+    }
+
+    #clear {
+    
+        position: relative;
+        right: 5%;
+    
+    }
+}
+
+/* Media Query max-width: 640px */
+@media screen and (max-width: 640px) {
+    body {
+        min-width: 640px;
+    }
+    #container {
+        position: absolute;
+        left: 10%;
+    }
+    a {
+        margin-left: 10%;
+        }
+}
