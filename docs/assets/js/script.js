@@ -36,11 +36,8 @@ var timer = document.querySelector("#startTime");
 var questionsBlock = document.querySelector("#questionsBlock");
 var container = document.querySelector("#container");
 
-
 var secondsLeft = 76;
-
 var holdInterval = 0;
-
 var penalty = 10;
 
 var ulCreate = document.createElement("ul");
@@ -169,7 +166,7 @@ function allDone() {
 
         if (initials === null) {
 
-            console.log("No value entered!");
+            window.alert("No value entered!");
 
         } else {
             var finalScore = {
@@ -199,6 +196,7 @@ clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 });
+
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 
@@ -212,6 +210,7 @@ if (allScores !== null) {
 
     }
 }
+
 goBack.addEventListener("click", function () {
     window.location.replace("./index.html");
 });
